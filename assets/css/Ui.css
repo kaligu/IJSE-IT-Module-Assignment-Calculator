@@ -1,0 +1,36 @@
+
+@media (min-width: 400px) {
+    .card-body{
+        font-size: 90px;
+    }
+    .card-body #calDescription{
+        font-size: 90px;
+    }
+    .card-body #calOutput{
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body{
+        font-size: 90px;
+    }
+    .card-body #calDescription{
+        font-size: 90px;
+    }
+    .card-body #calOutput{
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-body{
+        font-size: 25px;
+    }
+    .card-body #calDescription{
+        font-size: 25px;
+    }
+    .card-body #calOutput{
+        font-size: 60px;
+    }
+}
