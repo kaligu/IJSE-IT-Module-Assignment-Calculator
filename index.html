@@ -2,101 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Calculator</title>
-    <!-- Initialized Boostrap CSS Framework-->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-
-    <!-- Initialize Boostrap Stylesheet-->
-    <link href="assets/css/Ui.css" rel="stylesheet"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu Codo a Codo </title>
+    <!-- Google Font !-->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Josefin+Sans&family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <!-- Styles !-->
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
-<body style="background-color:#4f5050;">
-  <div class="container-fluid my-sm-5" style="background-color:#4f5050;">
-      <div class="card mx-lg-5" style="background-color:#4f5050;">
-          <div class="mx-lg-5">
-          <div class="mx-lg-5">
-          <div class="mx-lg-5">
-          <div class="mx-lg-5">
-              <div class="row mx-sm-0 mx-md-2 mx-lg-5 ms-md-0">
-                  <div class="card-body text-dark fw-bolder bg-white my-2 col-sm-12 mx-2 col-lg-12 col-md-12">
-                      <div class="text-center" id="calDescription">5+5</div>
-                      <div class="text-center" id="calOutput">10</div>
-                  </div>
-              </div>
-              <div class="row mx-sm-0 mx-md-2 mx-lg-5 ms-md-0">
-                  <div class="card-body text-white fw-bolder bg-danger my-2 col-sm-12 mx-2 col-lg-2 col-md-2" >
-                      C
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-danger my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      CE
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2  col-lg-2 col-md-2">
-                      /
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      *
-                  </div>
-              </div>
-              <div class="row mx-sm-0 mx-md-2 mx-lg-5 ms-md-0">
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      7
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      8
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2  col-lg-2 col-md-2">
-                      9
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      -
-                  </div>
-              </div>
-              <div class="row mx-sm-0 mx-md-2 mx-lg-5 ms-md-0">
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      4
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      5
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2  col-lg-2 col-md-2">
-                     6
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      %
-                  </div>
-              </div>
-              <div class="row mx-sm-0 mx-md-2 mx-lg-5 ms-md-0">
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      1
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      2
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2  col-lg-2 col-md-2">
-                      3
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      +
-                  </div>
-              </div>
-              <div class="row mx-sm-0 mx-md-2 mx-lg-5 ms-md-0">
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                     .
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      0
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-success my-2 col-sm-12 mx-2  col-lg-2 col-md-2">
+<body>
+    <div class="container"></div>
+    <div class="calculator">
+        <div class="display">
+          <input type="text" placeholder="0" id="input" disabled />
+        </div>
+        <div class="buttons">
 
-                  </div>
-                  <div class="card-body text-white fw-bolder bg-warning my-2 col-sm-12 mx-2 col-lg-2 col-md-2">
-                      =
-                  </div>
-              </div>
-          </div>
-          </div>
-          </div>
-          </div>
+          <!-- btns -->
+          <input type="button" value="1" class="input-button" />
+  
+          <input type="button" value="2" class="input-button" />
+          <input type="button" value="3" class="input-button" />
+          <input type="button" value="/" class="input-button" />
+          <input type="button" value="%" class="input-button" />
+  
+          <input type="button" value="In" class="input-button" />
+          <input type="button" value="4" class="input-button" />
+          <input type="button" value="5" class="input-button" />
+
+        
+          <input type="button" value="6" class="input-button" />
+          <input type="button" value="*" class="input-button" />
+          <input type="button" value="log" class="input-button" />
+          <input type="button" value="e" class="input-button" />
+  
+          <input type="button" value="7" class="input-button" />
+          <input type="button" value="8" class="input-button" />
+          <input type="button" value="9" class="input-button" />
+          <input type="button" value="-" class="input-button" />
+           <!-- btn clear -->
+           <input type="button" value="AC" id="clear" />
+           <input type="button" value="=" id="equal" />
+
+           <input type="button" value="." class="input-button" />
+           <input type="button" value="0" class="input-button" />
+           <input type="button" value="π" class="input-button" />
+           <input type="button" value="+" class="input-button" />
+           <input type="button" value="MR" class="input-button" />         
+        </div>
       </div>
-  </div>
+    <script src="assets/styles/script.js"></script>
 </body>
 </html>
+
+
+   
